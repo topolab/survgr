@@ -46,7 +46,7 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200119-19.20</small></h1>
+        <h1>jojo<small>μτσχ 20200119-19.25</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -174,7 +174,11 @@
               </div>
             </div>  <!--panel to-->
             jojo11
-            <textarea id="output-area" class="form-control" rows="2"></textarea> <!--jojo12 new line-->
+            <div class="form-group">                                                    <!--jojo12 new line-->
+            <label for="output-area" class="form-control-label">Αποτελέσματα:</label>   <!--jojo13 new line-->
+            <textarea id="output-area" class="form-control" rows="2"></textarea>        <!--jojo14 new line-->
+            </div>jojo15                                                                <!--jojo15 new line-->
+            <div id="output-alert-area" class="form-group">jojo16                       <!--jojo16 new line-->
             
             
             
