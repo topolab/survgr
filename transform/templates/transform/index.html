@@ -46,7 +46,7 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ</small></h1>
+        <h1>jojo<small>μτσχ 20200119-19.00</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -168,6 +168,9 @@
                   <textarea id="output-area" class="form-control" rows="5"></textarea>
                 </div>
                 <div id="output-alert-area" class="form-group">
+                    
+                    <div id="output-alert-area" class="form-group"><!--new line jojo-->
+                    
                   <!--generate alert based on the results-->
                 </div>
               </div>
@@ -179,7 +182,7 @@
 
       <hr>
       <!-- info -->
-      <p> To SurvGR είναι ένα web service για την εύκολη και μαζική μετατροπή συντεταγμένων σημείων αλλά και GIS features μεταξύ των διαφόρων συστημάτων αναφοράς που χρησιμοποιούνται στην Ελλάδα:
+      <p>Υποστηριζόμενα Συστήματα Αναφοράς:
         <ul>
           <li>ΕΓΣΑ87 / TM87</li>
           <li>HTRS07 / TM07</li>
@@ -187,7 +190,7 @@
           <li>Παγκόσμιο WGS84</li>
           <li>ED50 / UTM </li> 
         </ul>
-      Η εφαρμογή δεν εφαρμόζει προσεγγιστικούς υπολογισμούς. Για τους μετασχηματισμούς πρός και από το Παλαιό Ελληνικό Datum (προβολές HATT, TM3) χρησιμοποιούνται οι πολυωνυμικοί συντελεστές που διατίθενται από τον <a href="http://www.okxe.gr/el/">OKXE</a> και γίνεται ενδιάμεσος μετασχηματισμός στο ΕΓΣΑ87. Παρομοίως, για τους μετασχηματισμούς από και πρός το HTRS07 χρησιμοποιούνται τα διορθωτικά grids του <a href="http://www.hepos.gr/">Hepos</a>.
+      Για τους μετασχηματισμούς πρός και από το Παλαιό Ελληνικό Datum (προβολές HATT, TM3) χρησιμοποιούνται οι πολυωνυμικοί συντελεστές που διατίθενται από τον <a href="http://www.okxe.gr/el/">OKXE</a> και γίνεται ενδιάμεσος μετασχηματισμός στο ΕΓΣΑ87. Παρομοίως, για τους μετασχηματισμούς από και πρός το HTRS07 χρησιμοποιούνται τα διορθωτικά grids του <a href="http://www.hepos.gr/">Hepos</a>.
       </p>
       </div> <!--container-->
 
