@@ -46,7 +46,7 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200126-19.32</small></h1>
+        <h1>jojo<small>μτσχ 20200126-19.35</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -88,7 +88,7 @@
                 <!--input data-->
                 <div class="form-group">
                   <label for="input-area" class="form-control-label">Δώσε data εδώ:</label>
-                  <textarea id="input-area" class="form-control" rows="5" value="444444,4444444"></textarea>
+                  <textarea id="input-area" class="form-control" rows="5">444444,4444444</textarea>
                 </div>
                 <!-- input data options-->
                 <div class="row form-group"> 
@@ -166,7 +166,8 @@
                 <!--output data-->
                   <div class="form-group">
                     <label for="output-area" class="form-control-label">Αποτελέσματα:</label>
- τεστ εδώ:<textarea value="jojo" id="output-area" class="form-control" rows="2">τελος τεστ</textarea><!--end test-->
+                      <div id="output-area"><!--end test-->
+ τεστ εδώ:<textarea value="jojo" id="output-area" class="form-control" rows="2">here the results</textarea><!--end test-->
               εδώ το καλο:<textarea id="output-area" class="form-control" rows="5" readonly autofocus disabled></textarea>νταξ
                      τεστ2
                      <a href="https://www.google.gr/maps/@40.151,23.349,100m/data=!3m1!1e3">google maps link</a>
