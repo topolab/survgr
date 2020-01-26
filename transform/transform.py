@@ -34,7 +34,7 @@ DATUMS = {
 # All the reference systems used in Greece.
 # Each Hattblock has its own reference system (see Hattblock proj4text property...)
 REF_SYS = {
-	2100: ReferenceSystem('ΕΓΣΑ87 / ΤΜ87', 0, '+proj=etmerc +lat_0=0 +lon_0=24 +k=0.9996 +x_0=500000 +y_0=0 +ellps=GRS80 +towgs84=-199.723,74.030,246.018 +units=m +no_defs'),
+	2100: ReferenceSystem('εξα ΕΓΣΑ87 / ΤΜ87', 0, '+proj=etmerc +lat_0=0 +lon_0=24 +k=0.9996 +x_0=500000 +y_0=0 +ellps=GRS80 +towgs84=-199.723,74.030,246.018 +units=m +no_defs'),
 	4121: ReferenceSystem('ΕΓΣΑ87 (λ,φ)', 0, '+proj=longlat +ellps=GRS80 +towgs84=-199.723,74.030,246.018 +no_defs'),
 	4815: ReferenceSystem('Παλαιό Ελληνικό (λ,φ)', 2, '+proj=longlat +ellps=bessel +pm=athens +towgs84=456.387,372.620,496.818 +no_defs'),
 	4326: ReferenceSystem('WGS84 (λ,φ)', 4, '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs'),
