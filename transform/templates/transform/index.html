@@ -46,7 +46,7 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200119-19.55</small></h1>
+        <h1>jojo<small>μτσχ 20200126-17.20</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -128,7 +128,7 @@
               </div>
             </div> <!--panel from-->      
           </div>
-
+jojo1
           <div class="col-sm-6">
             <div class="panel panel-primary panel-transform-to">
               <div class="panel-heading">
@@ -148,6 +148,7 @@
                   {% endfor %}
                   </select>
                 </div>
+jojo2
                 <!--To Hattblock selection-->
                 <div id="to-hatt" class="hatt-selection form-group">
                   <label for="to-hatt-name" class="form-control-label">Φύλλο χάρτη ΓΥΣ 1:50.000:</label>
@@ -161,7 +162,57 @@
                     </span>
                   </div>
                 </div>
-
+jojo3
+                <!--output data-->
+                  <div class="form-group">
+                    <label for="output-area" class="form-control-label">Αποτελέσματα:</label>
+                    εδώ:<textarea id="output-area" class="form-control" rows="5"></textarea>
+                    <a href="https://www.google.gr/maps/@40.151,23.349,100m/data=!3m1!1e3">google maps link</a>
+                  </div>
+                <div id="output-alert-area" class="form-group">
+                <!--generate alert based on the results-->
+                </div>
+              </div>
+            </div>  <!--panel to-->
+          </div>
+        </div> <!--row-->
+      
+jojo4
+jojo11
+          <div class="col-sm-6">
+            <div class="panel panel-primary panel-transform-to">
+              <div class="panel-heading">
+                <h1 class="panel-title">Πρός:</h1>
+              </div>
+              <div class="panel-body">
+                <!--To Reference system selection -->
+                <div class="form-group">
+                  <label for="to-srid" class="form-control-label">Σύστημα αναφοράς:</label>          
+                  <select id="to-srid" name="to_srid" class="srid-selection form-control">
+                  {% for datum in datums %}
+                    <optgroup label="{{ datum.grouper }}">
+                    {% for refsys in datum.list %}
+                      <option value="{{ refsys.srid }}">{{ refsys.name }}</option>
+                    {% endfor %}
+                    </optgroup>
+                  {% endfor %}
+                  </select>
+                </div>
+jojo12
+                <!--To Hattblock selection-->
+                <div id="to-hatt" class="hatt-selection form-group">
+                  <label for="to-hatt-name" class="form-control-label">Φύλλο χάρτη ΓΥΣ 1:50.000:</label>
+                  <div class="input-group">
+                    <input type="text" id="to-hatt-name" class="hatt-name form-control twitter-typeahead" autocomplete="off" placeholder="Εισάγετε όνομα&hellip;" ></input>
+                    <input type="hidden" class="hatt-id" name="to_hatt_id"/>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#map-modal">
+                        <span class="glyphicon glyphicon-map-marker"></span> Επιλογή
+                      </button>
+                    </span>
+                  </div>
+                </div>
+jojo13
                 <!--output data-->
                   <div class="form-group">
                     <label for="output-area" class="form-control-label">Αποτελέσματα:</label>
@@ -176,6 +227,7 @@
           </div>
         </div> <!--row-->
 
+jojo20
       </form>
 
     
