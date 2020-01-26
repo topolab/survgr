@@ -48,9 +48,11 @@ REF_SYS = {
 	1000003: ReferenceSystem('Παλαιό Ελληνικό / TM3 Ανατ.Ζώνη', 2, '+proj=tmerc +lat_0=34 +lon_0=3 +k=0.9999 +x_0=200000 +y_0=0 +ellps=bessel +pm=athens +towgs84=456.387,372.620,496.818 +units=m +no_defs'),
 	1000004: ReferenceSystem('HTRS07 (λ,φ)', 1, '+proj=longlat +ellps=GRS80 +towgs84=0,0,0 +no_defs'),
 	1000005: ReferenceSystem('HTRS07 / TM07', 1, '+proj=etmerc +lat_0=0 +lon_0=24 +k=0.9996 +x_0=500000 +y_0=-2000000 +ellps=GRS80 +towgs84=0,0,0 +units=m +no_defs'),
-	#1000006: ReferenceSystem('ΕΓΣΑ87 (X,Y,Z)', 0, '+proj=geocent +ellps=GRS80 +towgs84=-199.723,74.030,246.018 +no_defs'),
-	#1000007: ReferenceSystem('Παλαιό Ελληνικό (X,Y,Z)', 2, '+proj=geocent +ellps=bessel +towgs84=456.387,372.620,496.818 +no_defs'),
-	#1000008: ReferenceSystem('HTRS07 (X,Y,Z)', 1, '+proj=geocent +ellps=GRS80 +towgs84=0,0,0 +no_defs')
+	#απο εδω και κατω τεστ
+	1000006: ReferenceSystem('ΕΓΣΑ87 (X,Y,Z)', 0, '+proj=geocent +ellps=GRS80 +towgs84=-199.723,74.030,246.018 +no_defs'),
+	1000007: ReferenceSystem('Παλαιό Ελληνικό (X,Y,Z)', 2, '+proj=geocent +ellps=bessel +towgs84=456.387,372.620,496.818 +no_defs'),
+	1000008: ReferenceSystem('HTRS07 (X,Y,Z)', 1, '+proj=geocent +ellps=GRS80 +towgs84=0,0,0 +no_defs')
+	#ως εδω και πανω τεστ
 }
 
 # mostly used constants below 
