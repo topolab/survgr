@@ -24,7 +24,7 @@ class ReferenceSystem(object):
 # All underlying datums used in Greece as the basis for the various reference systems.
 DATUMS = {
 	# id : name
-	0: 'ΕΓΣΑ87',
+	0: 'ΕΓΣΑ87 εξα',
 	1: 'HTRS07 (Hepos)',
 	2: 'Παλαιό Ελληνικό Datum',
 	3: 'ED50 (Ελλάδα)',
