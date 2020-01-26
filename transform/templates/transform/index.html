@@ -46,10 +46,10 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200126-17.50</small></h1>
+        <h1>jojo<small>μτσχ 20200126-18.00</small></h1>
       </div>
 
-#jojo      {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
+      {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
     	<form id="form-params" class="form" role="form" method="post" action="{% url 'transform' %}">
         
         <div class="row">
@@ -128,7 +128,7 @@
               </div>
             </div> <!--panel from-->      
           </div>
-jojo1
+
           <div class="col-sm-6">
             <div class="panel panel-primary panel-transform-to">
               <div class="panel-heading">
@@ -148,7 +148,7 @@ jojo1
                   {% endfor %}
                   </select>
                 </div>
-jojo2
+
                 <!--To Hattblock selection-->
                 <div id="to-hatt" class="hatt-selection form-group">
                   <label for="to-hatt-name" class="form-control-label">Φύλλο χάρτη ΓΥΣ 1:50.000:</label>
@@ -162,7 +162,7 @@ jojo2
                     </span>
                   </div>
                 </div>
-jojo3
+
                 <!--output data-->
                   <div class="form-group">
                     <label for="output-area" class="form-control-label">Αποτελέσματα:</label>
@@ -177,7 +177,7 @@ jojo3
           </div>
         </div> <!--row-->
       
-jojo4
+
       </form>
 
     
