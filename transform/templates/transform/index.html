@@ -1,5 +1,5 @@
 ﻿{% load static %}
-jojo 20200201
+jojo 20200201 19.45
 <!DOCTYPE HTML>
 <html lang="el-GR">
 <head>
@@ -46,7 +46,7 @@ jojo 20200201
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200201-19.30</small></h1>
+        <h1>jojo<small>μτσχ</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -169,7 +169,7 @@ jojo 20200201
                      <textarea id="output-area" class="form-control" rows="5" readonly autofocus disabled>waiting..</textarea>
 <div class="jjtooltip">
 <button onclick="jojoFunction()" onmouseout="outFunc()">
-<span class="jjjtooltiptext" id="jojoTooltip">put mouse here to copy</span> ok!!
+<span class="jjjtooltiptext" id="jojoTooltip">put mouse HERE to copy</span> ok
 </button>
 </div>
 
@@ -188,7 +188,7 @@ jojo 20200201
 function outFunc() 
     {
      var jjtooltip = document.getElementById("jojoTooltip");
-      jjtooltip.innerHTML = "Click now";
+      jjtooltip.innerHTML = "Click HERE  ";
     }
 </script>
                      
