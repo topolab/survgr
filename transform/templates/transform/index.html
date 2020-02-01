@@ -46,7 +46,7 @@
     
     <div class="container">
       <div class="page-header">
-        <h1>jojo<small>μτσχ 20200129-19.10</small></h1>
+        <h1>jojo<small>μτσχ 20200201-19.25</small></h1>
       </div>
 
       {% regroup ref_systems|dictsortreversed:"datum" by datum as datums %}
@@ -166,13 +166,31 @@
                 <!--output data-->
                   <div class="form-group">
                     <label for="output-area" class="form-control-label">Αποτελέσματα:</label>
-                     <textarea id="output-area" class="form-control" rows="5" readonly autofocus disabled>αλλάζει</textarea>
-                      <div class="tooltip">
-                      <button onclick="myFunction()" onmouseout="outFunc()">
-                      <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-                      Copy text
-                      </button>
+                     <textarea id="output-area" class="form-control" rows="5">readonly autofocus disabled</textarea>
+11
+<div class="jjtooltip">
+<button onclick="jojoFunction()" onmouseout="outFunc()">
+<span class="jjjtooltiptext" id="jojoTooltip">put mouse here to copy</span> here!
+</button>
+</div>
+12
+<script>
+  function jojoFunction() 
+    {
+     var copyText = document.getElementById("output-area");
+     copyText.select();
+     copyText.setSelectionRange(0, 99999);
+     document.execCommand("copy");
+    }
 
+function outFunc() 
+    {
+     var jjtooltip = document.getElementById("jojoTooltip");
+      jjtooltip.innerHTML = "Click now";
+    }
+</script>
+13
+14                      
                       <a href="https://www.google.gr/maps/@40.151,23.349,100m/data=!3m1!1e3">google maps link</a>
                   </div>
                 <div id="output-alert-area" class="form-group">
@@ -186,22 +204,7 @@
 
       </form>
 
-<script>
-function myFunction() {
-  var copyText = document.getElementById("output-area");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  document.execCommand("copy");
-  
-  var form-group = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + copyText.value;
-}
 
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
-}
-</script>
     
     
       <hr>
